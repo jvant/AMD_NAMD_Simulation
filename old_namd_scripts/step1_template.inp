@@ -1,0 +1,24 @@
+#############################################################
+## JOB DESCRIPTION                                         ##
+#############################################################
+
+# Minimize for 100 ps
+
+
+#############################################################
+## ADJUSTABLE PARAMETERS                                   ##
+#############################################################
+set myfile         FILENAME 
+
+set temp           303.15;
+set stepnum        1
+set outputname     step.$stepnum\_equilibration;
+
+temperature	   $temp
+set MS 		   100000
+set TS 		   0
+
+# Remove if not first step
+firsttimestep      0
+
+source ../../namd_scripts/run.inp

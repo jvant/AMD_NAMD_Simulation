@@ -1,0 +1,19 @@
+#############################################################
+## JOB DESCRIPTION                                         ##
+#############################################################
+
+# Minimize 10 ps then equilibrate for 10 ps
+
+
+#############################################################
+## ADJUSTABLE PARAMETERS                                   ##
+#############################################################
+set myfile         FILENAME
+
+set temp           303.15;
+set stepnum        STEPNUM
+set outputname     step.$stepnum\_equilibration;
+set MS 		   10000
+set TS 		   10000
+
+source ../../namd_scripts/run.inp
